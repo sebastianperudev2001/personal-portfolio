@@ -1,1 +1,18 @@
-<p>experience works!</p>
+<body id="cuerpo">
+  <h1>Experience</h1>
+  <mat-card class="example-card" *ngFor="let puntito of experiences">
+    <mat-card-header>
+      <mat-card-title>{{ puntito.position }}</mat-card-title>
+      <mat-card-subtitle>{{ puntito.company }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <span>{{ puntito.date }} </span>
+      <span>{{ puntito.location }}</span>
+      <ul>
+        <li *ngFor="let point of puntito.description.split('.')">
+          {{ point }}
+        </li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</body>
