@@ -9,13 +9,15 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { MaterialExampleModule } from 'src/material.module';
 import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopbarComponent,
     MainPageComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,
